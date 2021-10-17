@@ -6,9 +6,5 @@
     tools:context=".ui.fragment.SettingsFragment">
 
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="settings" />
+
 </FrameLayout>

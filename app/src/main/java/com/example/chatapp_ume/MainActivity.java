@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.chatapp_ume.ui.activity.ForgotPasswordActivity;
+import com.example.chatapp_ume.ui.activity.RegisterActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,8 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
+        /// SIGN IN////
+        btnSignin = findViewById(R.id.btnRegister);
+        btnSignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+            }
+        });
 
         //// FORGOT PASSWORD ///////
         txtForgotPassword.setOnClickListener(new View.OnClickListener() {
