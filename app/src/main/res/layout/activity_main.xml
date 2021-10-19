@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="191dp"
         android:layout_height="190dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="@string/imgDescription"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,6 @@
         android:id="@+id/txtUserAccount"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:background="#39C6A097"
         android:hint="@string/Email_Phone"
         android:textColorHint="#020000"
         app:endIconTint="@color/black"
@@ -39,6 +38,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#39C6A097"
             android:fontFamily="@font/rubik"
             android:textStyle="bold"
             tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
@@ -49,7 +49,6 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#39C6A097"
         android:hint="@string/password"
         android:textColorHint="#0B0B0B"
         app:endIconMode="password_toggle"
@@ -65,6 +64,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#39C6A097"
             android:fontFamily="@font/rubik"
             android:inputType="textPassword"
             android:textStyle="bold"
@@ -77,9 +77,8 @@
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/color_corner_button"
+        android:background="@drawable/custom_button2"
         android:fontFamily="@font/rubik"
-        android:rotation="0"
         android:text="Sign in"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -104,11 +103,11 @@
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/color_corner_button"
         android:fontFamily="@font/rubik"
         android:text="Login"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoneActivity">
+    tools:context=".ui.activity.DoneActivity">
 
     <TextView
         android:id="@+id/textView8"
@@ -61,15 +61,18 @@
         app:layout_constraintStart_toStartOf="@+id/imgCircle"
         app:layout_constraintTop_toBottomOf="@+id/imgCircle" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnUpdate"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
         android:layout_marginTop="9dp"
         android:text="@string/Complete"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:backgroundTint="#F01E1C1C"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button2"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"

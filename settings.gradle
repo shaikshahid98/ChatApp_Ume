@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ChatApp_Ume"
 include ':app'
+include ':Lib'
