@@ -28,6 +28,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.example.chatapp_ume.Model.UserModel;
 import com.example.chatapp_ume.ui.CircleTransform;
 import com.example.chatapp_ume.ui.activity.AboutUsActivity;
 import com.example.chatapp_ume.ui.activity.PrivacyPolicyActivity;
@@ -83,6 +84,9 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
 //                choosePicture();
             }
         });
+        //// NAME
+        txtName = navHeader.findViewById(R.id.txtUsername);
+
         // Floating Button
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -151,6 +155,13 @@ public class Main extends AppCompatActivity implements NavigationView.OnNavigati
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        UserModel.Account account = (UserModel.Account)getIntent().getSerializableExtra("data");
+        txtName.setText(account.getUserName());
     }
 
     private void loadFragment(Fragment fragment) {
